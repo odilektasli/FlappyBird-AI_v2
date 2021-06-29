@@ -100,7 +100,7 @@ public class NeuralNetwork
     int[] neuralLayers;
     int neuralWeightLength = 0;   
 
-    //[5,6,3,1]
+    //[3,6,3,1]
     public void InitializeNetwork(int[] layers)
     {
         neuralLayers = layers;
@@ -181,7 +181,6 @@ public class NeuralNetwork
                     //bias
                     weightedSum -= weights.ElementAt(layerIndex)[rowIndex, columnCount - 1];
                 outputs.Add((float)System.Math.Tanh(weightedSum));
-                //outputs.Add(Sigmoid(weightedSum));
             }
             inputs = outputs;
 
@@ -190,11 +189,6 @@ public class NeuralNetwork
 
         return outputs;
 
-    }
-
-    float Sigmoid(float netInput, float response = 1.0f)
-    {
-        return (1.0f / (1.0f + (float)System.Math.Exp(-netInput / response)));
     }
 
     public int NeuralWeightLength { get => neuralWeightLength; set => neuralWeightLength = value; }
