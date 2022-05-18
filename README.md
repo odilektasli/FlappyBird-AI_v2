@@ -10,6 +10,9 @@ After declaration birds are ready to learn with the followings.
 
 ![resim](https://user-images.githubusercontent.com/61044813/124247875-faeede80-db2a-11eb-9b39-1d7dd8a0bef1.png)
 
+
+![flappyBirdAI](https://user-images.githubusercontent.com/61044813/169121275-e1f3a290-c1ea-4122-a1e4-ad293f6824bf.PNG)
+
 Creation of a herd that will learn how to be successful. Also, the herd (birds) can access only the data that humans can obtain which are:
 _a.	Destination between bird and closest pipe
 b.	Height of the bird on Y coordinate
@@ -35,6 +38,7 @@ Firstly, we get the best bird (that has the best score in the previous generatio
 **_c.	Crossovering The Genoms_**
 
 ![resim](https://user-images.githubusercontent.com/61044813/124250326-73ef3580-db2d-11eb-80a7-b3fbed147bdb.png)
+
 
 We decided the best ones according to their individual scores. So, the bird that has the best score is more likely to be selected. But there is a probability to select the worst one, so it is acceptable, because the worst one can do the right movements also. To give a chance to the worst scored bird we choose 2 parents and crossover them with a randomly selected crossover point to produce 2 babies. (figure 3). There is a probability to be mutated for baby birds that come from crossover.
 
